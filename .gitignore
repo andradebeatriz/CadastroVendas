@@ -1,0 +1,50 @@
+## Ignorar arquivos do Visual Studio
+.vs/
+*/bin/
+*/obj/
+*.user
+*.suo
+*.cache
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.dbmdl
+*.pfx
+*.publishsettings
+
+## Arquivos de compilação
+*.exe
+*.dll
+*.pdb
+*.xml
+
+## Arquivos de configuração local
+*.config
+appsettings.json
+
+## Arquivos temporários
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+
+## Arquivos do VS Code
+.vscode/
+
+## Arquivos do Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## Arquivos de banco de dados
+*.mdf
+*.ldf
+*.sdf
+
+## Arquivos do Office
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
