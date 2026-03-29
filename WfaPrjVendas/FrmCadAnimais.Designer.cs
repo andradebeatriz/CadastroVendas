@@ -83,50 +83,45 @@ namespace FrmAnimais
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(113, 33);
-            idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            idLabel.Location = new System.Drawing.Point(151, 41);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(23, 17);
+            idLabel.Size = new System.Drawing.Size(29, 23);
             idLabel.TabIndex = 54;
             idLabel.Text = "Id:";
             // 
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(26, 57);
-            nomeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            nomeLabel.Location = new System.Drawing.Point(35, 70);
             nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(112, 17);
+            nomeLabel.Size = new System.Drawing.Size(142, 23);
             nomeLabel.TabIndex = 56;
             nomeLabel.Text = "Nome do animal:";
             // 
             // tutorLabel
             // 
             tutorLabel.AutoSize = true;
-            tutorLabel.Location = new System.Drawing.Point(95, 81);
-            tutorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            tutorLabel.Location = new System.Drawing.Point(127, 100);
             tutorLabel.Name = "tutorLabel";
-            tutorLabel.Size = new System.Drawing.Size(44, 17);
+            tutorLabel.Size = new System.Drawing.Size(55, 23);
             tutorLabel.TabIndex = 58;
             tutorLabel.Text = "Tutor:";
             // 
             // tipoLabel
             // 
             tipoLabel.AutoSize = true;
-            tipoLabel.Location = new System.Drawing.Point(99, 107);
-            tipoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            tipoLabel.Location = new System.Drawing.Point(132, 132);
             tipoLabel.Name = "tipoLabel";
-            tipoLabel.Size = new System.Drawing.Size(37, 17);
+            tipoLabel.Size = new System.Drawing.Size(47, 23);
             tipoLabel.TabIndex = 60;
             tipoLabel.Text = "Tipo:";
             // 
             // datanascLabel
             // 
             datanascLabel.AutoSize = true;
-            datanascLabel.Location = new System.Drawing.Point(67, 133);
-            datanascLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            datanascLabel.Location = new System.Drawing.Point(89, 164);
             datanascLabel.Name = "datanascLabel";
-            datanascLabel.Size = new System.Drawing.Size(72, 17);
+            datanascLabel.Size = new System.Drawing.Size(92, 23);
             datanascLabel.TabIndex = 62;
             datanascLabel.Text = "Data Nasc:";
             // 
@@ -137,10 +132,11 @@ namespace FrmAnimais
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnListar.Image = global::WfaPrjVendas.Properties.Resources.lista_de_mesas;
             this.btnListar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListar.Location = new System.Drawing.Point(421, 15);
+            this.btnListar.Location = new System.Drawing.Point(561, 18);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Padding = new System.Windows.Forms.Padding(3, 0, 2, 0);
-            this.btnListar.Size = new System.Drawing.Size(70, 27);
+            this.btnListar.Padding = new System.Windows.Forms.Padding(4, 0, 3, 0);
+            this.btnListar.Size = new System.Drawing.Size(93, 33);
             this.btnListar.TabIndex = 53;
             this.btnListar.Text = "&Listar";
             this.btnListar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -154,10 +150,11 @@ namespace FrmAnimais
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnCancelar.Image = global::WfaPrjVendas.Properties.Resources.cross;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(327, 15);
+            this.btnCancelar.Location = new System.Drawing.Point(436, 18);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Padding = new System.Windows.Forms.Padding(3, 0, 1, 0);
-            this.btnCancelar.Size = new System.Drawing.Size(88, 27);
+            this.btnCancelar.Padding = new System.Windows.Forms.Padding(4, 0, 1, 0);
+            this.btnCancelar.Size = new System.Drawing.Size(117, 33);
             this.btnCancelar.TabIndex = 52;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -172,10 +169,11 @@ namespace FrmAnimais
             this.btnGravar.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnGravar.Image = global::WfaPrjVendas.Properties.Resources.download;
             this.btnGravar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGravar.Location = new System.Drawing.Point(241, 15);
+            this.btnGravar.Location = new System.Drawing.Point(321, 18);
+            this.btnGravar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGravar.Name = "btnGravar";
-            this.btnGravar.Padding = new System.Windows.Forms.Padding(3, 0, 2, 0);
-            this.btnGravar.Size = new System.Drawing.Size(81, 27);
+            this.btnGravar.Padding = new System.Windows.Forms.Padding(4, 0, 3, 0);
+            this.btnGravar.Size = new System.Drawing.Size(108, 33);
             this.btnGravar.TabIndex = 51;
             this.btnGravar.Text = "&Gravar";
             this.btnGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -189,10 +187,11 @@ namespace FrmAnimais
             this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnApagar.Image = global::WfaPrjVendas.Properties.Resources.trash;
             this.btnApagar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnApagar.Location = new System.Drawing.Point(161, 15);
+            this.btnApagar.Location = new System.Drawing.Point(215, 18);
+            this.btnApagar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnApagar.Name = "btnApagar";
-            this.btnApagar.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btnApagar.Size = new System.Drawing.Size(74, 27);
+            this.btnApagar.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnApagar.Size = new System.Drawing.Size(99, 33);
             this.btnApagar.TabIndex = 49;
             this.btnApagar.Text = "&Apagar";
             this.btnApagar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -206,10 +205,11 @@ namespace FrmAnimais
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Image = global::WfaPrjVendas.Properties.Resources.pencil;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(89, 15);
+            this.btnEditar.Location = new System.Drawing.Point(119, 18);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Padding = new System.Windows.Forms.Padding(3, 0, 1, 0);
-            this.btnEditar.Size = new System.Drawing.Size(67, 27);
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(4, 0, 1, 0);
+            this.btnEditar.Size = new System.Drawing.Size(89, 33);
             this.btnEditar.TabIndex = 48;
             this.btnEditar.Text = "&Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -223,10 +223,11 @@ namespace FrmAnimais
             this.btnIncluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIncluir.Image = global::WfaPrjVendas.Properties.Resources.plus;
             this.btnIncluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIncluir.Location = new System.Drawing.Point(17, 15);
+            this.btnIncluir.Location = new System.Drawing.Point(23, 18);
+            this.btnIncluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIncluir.Name = "btnIncluir";
-            this.btnIncluir.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btnIncluir.Size = new System.Drawing.Size(67, 27);
+            this.btnIncluir.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnIncluir.Size = new System.Drawing.Size(89, 33);
             this.btnIncluir.TabIndex = 47;
             this.btnIncluir.Text = "&Incluir";
             this.btnIncluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -236,10 +237,10 @@ namespace FrmAnimais
             // txtNome
             // 
             this.txtNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.animalBindingSource, "nome", true));
-            this.txtNome.Location = new System.Drawing.Point(141, 54);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNome.Location = new System.Drawing.Point(188, 66);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(148, 25);
+            this.txtNome.Size = new System.Drawing.Size(196, 29);
             this.txtNome.TabIndex = 57;
             // 
             // animalBindingSource
@@ -255,19 +256,19 @@ namespace FrmAnimais
             // txtTutor
             // 
             this.txtTutor.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.animalBindingSource, "tutor", true));
-            this.txtTutor.Location = new System.Drawing.Point(141, 79);
-            this.txtTutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTutor.Location = new System.Drawing.Point(188, 97);
+            this.txtTutor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTutor.Name = "txtTutor";
-            this.txtTutor.Size = new System.Drawing.Size(148, 25);
+            this.txtTutor.Size = new System.Drawing.Size(196, 29);
             this.txtTutor.TabIndex = 59;
             // 
             // txtTipo
             // 
             this.txtTipo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.animalBindingSource, "tipo", true));
-            this.txtTipo.Location = new System.Drawing.Point(141, 105);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTipo.Location = new System.Drawing.Point(188, 129);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(148, 25);
+            this.txtTipo.Size = new System.Drawing.Size(196, 29);
             this.txtTipo.TabIndex = 61;
             // 
             // dgvAnimal
@@ -285,14 +286,14 @@ namespace FrmAnimais
             this.datanasc,
             this.foto});
             this.dgvAnimal.DataSource = this.animalBindingSource;
-            this.dgvAnimal.Location = new System.Drawing.Point(17, 256);
-            this.dgvAnimal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvAnimal.Location = new System.Drawing.Point(23, 315);
+            this.dgvAnimal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvAnimal.Name = "dgvAnimal";
             this.dgvAnimal.ReadOnly = true;
             this.dgvAnimal.RowHeadersWidth = 62;
             this.dgvAnimal.RowTemplate.Height = 28;
             this.dgvAnimal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAnimal.Size = new System.Drawing.Size(733, 143);
+            this.dgvAnimal.Size = new System.Drawing.Size(977, 176);
             this.dgvAnimal.TabIndex = 65;
             // 
             // id
@@ -352,19 +353,21 @@ namespace FrmAnimais
             // txtId
             // 
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(141, 30);
+            this.txtId.Location = new System.Drawing.Point(188, 37);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
-            this.txtId.Size = new System.Drawing.Size(77, 25);
+            this.txtId.Size = new System.Drawing.Size(101, 29);
             this.txtId.TabIndex = 66;
             // 
             // dtpDataNasc
             // 
             this.dtpDataNasc.CustomFormat = "dd/MM/yyyy";
             this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDataNasc.Location = new System.Drawing.Point(141, 131);
+            this.dtpDataNasc.Location = new System.Drawing.Point(188, 161);
+            this.dtpDataNasc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDataNasc.Name = "dtpDataNasc";
-            this.dtpDataNasc.Size = new System.Drawing.Size(105, 25);
+            this.dtpDataNasc.Size = new System.Drawing.Size(139, 29);
             this.dtpDataNasc.TabIndex = 67;
             // 
             // btnUpload
@@ -373,10 +376,11 @@ namespace FrmAnimais
             this.btnUpload.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpload.Image = global::WfaPrjVendas.Properties.Resources.upload;
             this.btnUpload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpload.Location = new System.Drawing.Point(366, 158);
+            this.btnUpload.Location = new System.Drawing.Point(488, 194);
+            this.btnUpload.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Padding = new System.Windows.Forms.Padding(1, 0, 3, 0);
-            this.btnUpload.Size = new System.Drawing.Size(79, 24);
+            this.btnUpload.Padding = new System.Windows.Forms.Padding(1, 0, 4, 0);
+            this.btnUpload.Size = new System.Drawing.Size(105, 30);
             this.btnUpload.TabIndex = 69;
             this.btnUpload.Text = "Upload";
             this.btnUpload.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -400,29 +404,31 @@ namespace FrmAnimais
             this.grpCampos.Controls.Add(this.txtTipo);
             this.grpCampos.Controls.Add(datanascLabel);
             this.grpCampos.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.grpCampos.Location = new System.Drawing.Point(17, 55);
-            this.grpCampos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpCampos.Location = new System.Drawing.Point(23, 68);
+            this.grpCampos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpCampos.Name = "grpCampos";
-            this.grpCampos.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grpCampos.Size = new System.Drawing.Size(733, 187);
+            this.grpCampos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpCampos.Size = new System.Drawing.Size(977, 230);
             this.grpCampos.TabIndex = 70;
             this.grpCampos.TabStop = false;
             this.grpCampos.Text = "Informações do animal:";
             // 
             // txtCaminhoImagem
             // 
-            this.txtCaminhoImagem.Location = new System.Drawing.Point(659, 158);
+            this.txtCaminhoImagem.Location = new System.Drawing.Point(879, 194);
+            this.txtCaminhoImagem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCaminhoImagem.Name = "txtCaminhoImagem";
-            this.txtCaminhoImagem.Size = new System.Drawing.Size(48, 25);
+            this.txtCaminhoImagem.Size = new System.Drawing.Size(63, 29);
             this.txtCaminhoImagem.TabIndex = 70;
             this.txtCaminhoImagem.Visible = false;
             // 
             // fotoTextBox
             // 
             this.fotoTextBox.Image = ((System.Drawing.Image)(resources.GetObject("fotoTextBox.Image")));
-            this.fotoTextBox.Location = new System.Drawing.Point(451, 10);
+            this.fotoTextBox.Location = new System.Drawing.Point(601, 12);
+            this.fotoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fotoTextBox.Name = "fotoTextBox";
-            this.fotoTextBox.Size = new System.Drawing.Size(190, 172);
+            this.fotoTextBox.Size = new System.Drawing.Size(253, 212);
             this.fotoTextBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fotoTextBox.TabIndex = 68;
             this.fotoTextBox.TabStop = false;
@@ -431,17 +437,19 @@ namespace FrmAnimais
             // 
             this.panel1.Controls.Add(this.txtPesquisar);
             this.panel1.Controls.Add(this.btnPesquisar);
-            this.panel1.Location = new System.Drawing.Point(496, 15);
+            this.panel1.Location = new System.Drawing.Point(661, 18);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(169, 27);
+            this.panel1.Size = new System.Drawing.Size(225, 33);
             this.panel1.TabIndex = 71;
             // 
             // txtPesquisar
             // 
             this.txtPesquisar.BackColor = System.Drawing.Color.Linen;
-            this.txtPesquisar.Location = new System.Drawing.Point(3, 5);
+            this.txtPesquisar.Location = new System.Drawing.Point(4, 6);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(119, 20);
+            this.txtPesquisar.Size = new System.Drawing.Size(157, 22);
             this.txtPesquisar.TabIndex = 43;
             // 
             // btnPesquisar
@@ -450,10 +458,10 @@ namespace FrmAnimais
             this.btnPesquisar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
-            this.btnPesquisar.Location = new System.Drawing.Point(128, 4);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPesquisar.Location = new System.Drawing.Point(171, 5);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(37, 20);
+            this.btnPesquisar.Size = new System.Drawing.Size(49, 25);
             this.btnPesquisar.TabIndex = 36;
             this.btnPesquisar.Text = "&";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -467,10 +475,11 @@ namespace FrmAnimais
             this.btnSair.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnSair.Image = global::WfaPrjVendas.Properties.Resources.sair;
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Location = new System.Drawing.Point(681, 15);
+            this.btnSair.Location = new System.Drawing.Point(908, 18);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnSair.Size = new System.Drawing.Size(69, 27);
+            this.btnSair.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnSair.Size = new System.Drawing.Size(92, 33);
             this.btnSair.TabIndex = 54;
             this.btnSair.Text = "&Sair";
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -493,10 +502,10 @@ namespace FrmAnimais
             // 
             // FrmAnimal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BurlyWood;
-            this.ClientSize = new System.Drawing.Size(764, 413);
+            this.ClientSize = new System.Drawing.Size(1019, 508);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grpCampos);
             this.Controls.Add(this.dgvAnimal);
@@ -509,11 +518,10 @@ namespace FrmAnimais
             this.Controls.Add(this.btnIncluir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FrmAnimal";
             this.Text = "FrmCadAnimais";
-           
             this.Load += new System.EventHandler(this.FrmAnimal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.animalBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetVendas)).EndInit();

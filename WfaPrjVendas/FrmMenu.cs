@@ -49,6 +49,7 @@ namespace WfaPrjVendas
             Close();
         }
 
+
         private void FrmMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Deseja realmente sair?", "Atenção",
@@ -166,6 +167,141 @@ namespace WfaPrjVendas
             FrmSobre frmSobre = new FrmSobre();
             frmSobre.MdiParent = this;
             frmSobre.Show();
+        }
+
+        private void relatórioDeprodutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FrmRptProdutos)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            FrmRptProdutos frmRptProdutos = new FrmRptProdutos();
+            frmRptProdutos.MdiParent = this;
+            frmRptProdutos.Show();
+        }
+
+        private void relatórioDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FrmRptClientes)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            FrmRptClientes frmRptClientes = new FrmRptClientes();
+            frmRptClientes.MdiParent = this;
+            frmRptClientes.Show();
+        }
+
+        private void relatórioDeanimaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FrmRptAnimais)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            FrmRptAnimais frmRptAnimais = new FrmRptAnimais();
+            frmRptAnimais.MdiParent = this;
+            frmRptAnimais.Show();
+        }
+
+        private void relatórioDeVendasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FrmRptVendas)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            FrmRptVendas frmRptVendas = new FrmRptVendas();
+            frmRptVendas.MdiParent = this;
+            frmRptVendas.Show();
+        }
+
+        private void relatórioDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FrmRptClientes)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            FrmRptClientes frmRptClientes = new FrmRptClientes();
+            frmRptClientes.MdiParent = this;
+            frmRptClientes.Show();
+        }
+
+        private void relatórioDeVendasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FrmRptVendas)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            FrmRptVendas frmRptVendas = new FrmRptVendas();
+            frmRptVendas.MdiParent = this;
+            frmRptVendas.Show();
+        }
+
+        private void relatórioDeProdutosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FrmRptProdutos)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            FrmRptProdutos frmRptProdutos = new FrmRptProdutos();
+            frmRptProdutos.MdiParent = this;
+            frmRptProdutos.Show();
+        }
+
+        private void relatórioDeAnimaisToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FrmRptAnimais)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            FrmRptAnimais frmRptAnimais = new FrmRptAnimais();
+            frmRptAnimais.MdiParent = this;
+            frmRptAnimais.Show();
+        }
+
+        private void topicosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is FrmTopicos)
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            FrmTopicos frmTopicos = new FrmTopicos();
+            frmTopicos.MdiParent = this;
+            frmTopicos.Show();
         }
     }
 }

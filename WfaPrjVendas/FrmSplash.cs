@@ -32,11 +32,6 @@ namespace WfaPrjVendas
                 this.Close();
             }
         }
-
-        private void pgbSplash_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

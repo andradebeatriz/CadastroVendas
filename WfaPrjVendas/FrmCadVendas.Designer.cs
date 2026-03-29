@@ -94,6 +94,7 @@
             this.pc_itemvendaTableAdapter = new WfaPrjVendas.DataSetVendasTableAdapters.pc_itemvendaTableAdapter();
             this.pc_vendaTableAdapter = new WfaPrjVendas.DataSetVendasTableAdapters.pc_vendaTableAdapter();
             this.tableAdapterManager = new WfaPrjVendas.DataSetVendasTableAdapters.TableAdapterManager();
+            this.fKpcvendapcitemvendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             num_vendaLabel = new System.Windows.Forms.Label();
             datavendaLabel = new System.Windows.Forms.Label();
             dataentregaLabel = new System.Windows.Forms.Label();
@@ -114,6 +115,7 @@
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fKpcvendapcitemvendaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // num_vendaLabel
@@ -323,9 +325,9 @@
             this.grpItem.Controls.Add(this.cmbProduto);
             this.grpItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.grpItem.Location = new System.Drawing.Point(9, 399);
-            this.grpItem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpItem.Margin = new System.Windows.Forms.Padding(2);
             this.grpItem.Name = "grpItem";
-            this.grpItem.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpItem.Padding = new System.Windows.Forms.Padding(2);
             this.grpItem.Size = new System.Drawing.Size(755, 80);
             this.grpItem.TabIndex = 57;
             this.grpItem.TabStop = false;
@@ -335,7 +337,7 @@
             this.txtSubTotal.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pc_itemvendaBindingSource, "subtotal", true));
             this.txtSubTotal.Enabled = false;
             this.txtSubTotal.Location = new System.Drawing.Point(396, 37);
-            this.txtSubTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSubTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtSubTotal.Name = "txtSubTotal";
             this.txtSubTotal.ReadOnly = true;
             this.txtSubTotal.Size = new System.Drawing.Size(90, 21);
@@ -351,7 +353,7 @@
             this.txtPrecoUnit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pc_itemvendaBindingSource, "precounit", true));
             this.txtPrecoUnit.Enabled = false;
             this.txtPrecoUnit.Location = new System.Drawing.Point(273, 37);
-            this.txtPrecoUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecoUnit.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecoUnit.Name = "txtPrecoUnit";
             this.txtPrecoUnit.ReadOnly = true;
             this.txtPrecoUnit.Size = new System.Drawing.Size(95, 21);
@@ -361,7 +363,7 @@
             // 
             this.nudQuantidade.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.pc_itemvendaBindingSource, "quantidade", true));
             this.nudQuantidade.Location = new System.Drawing.Point(165, 37);
-            this.nudQuantidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudQuantidade.Margin = new System.Windows.Forms.Padding(2);
             this.nudQuantidade.Name = "nudQuantidade";
             this.nudQuantidade.Size = new System.Drawing.Size(80, 21);
             this.nudQuantidade.TabIndex = 59;
@@ -379,12 +381,13 @@
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.ForeColor = System.Drawing.Color.Red;
+            this.txtTotal.ForeColor = System.Drawing.Color.Firebrick;
             this.txtTotal.Location = new System.Drawing.Point(124, 15);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(106, 21);
             this.txtTotal.TabIndex = 10;
+            this.txtTotal.Text = "R$0,00";
             // 
             // label1
             // 
@@ -402,7 +405,7 @@
             this.cmbProduto.Enabled = false;
             this.cmbProduto.FormattingEnabled = true;
             this.cmbProduto.Location = new System.Drawing.Point(17, 35);
-            this.cmbProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbProduto.Margin = new System.Windows.Forms.Padding(2);
             this.cmbProduto.Name = "cmbProduto";
             this.cmbProduto.Size = new System.Drawing.Size(121, 23);
             this.cmbProduto.TabIndex = 1;
@@ -423,7 +426,7 @@
             this.subtotal});
             this.dgvItens.DataSource = this.pc_itemvendaBindingSource;
             this.dgvItens.Location = new System.Drawing.Point(10, 492);
-            this.dgvItens.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvItens.Margin = new System.Windows.Forms.Padding(2);
             this.dgvItens.Name = "dgvItens";
             this.dgvItens.ReadOnly = true;
             this.dgvItens.RowHeadersWidth = 62;
@@ -509,7 +512,7 @@
             this.btnPesquisar.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnPesquisar.Image = global::WfaPrjVendas.Properties.Resources.search;
             this.btnPesquisar.Location = new System.Drawing.Point(128, 4);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(38, 20);
             this.btnPesquisar.TabIndex = 36;
@@ -532,9 +535,9 @@
             this.groupBox2.Controls.Add(this.txtObs);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(9, 72);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(427, 146);
             this.groupBox2.TabIndex = 94;
             this.groupBox2.TabStop = false;
@@ -595,7 +598,7 @@
             this.btnPesquisarItem.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnPesquisarItem.Image = global::WfaPrjVendas.Properties.Resources.search;
             this.btnPesquisarItem.Location = new System.Drawing.Point(128, 4);
-            this.btnPesquisarItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPesquisarItem.Margin = new System.Windows.Forms.Padding(4);
             this.btnPesquisarItem.Name = "btnPesquisarItem";
             this.btnPesquisarItem.Size = new System.Drawing.Size(38, 20);
             this.btnPesquisarItem.TabIndex = 36;
@@ -835,13 +838,18 @@
             this.tableAdapterManager.pc_vendaTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = WfaPrjVendas.DataSetVendasTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // fKpcvendapcitemvendaBindingSource
+            // 
+            this.fKpcvendapcitemvendaBindingSource.DataMember = "FK_pc_venda_pc_itemvenda";
+            this.fKpcvendapcitemvendaBindingSource.DataSource = this.pc_vendaBindingSource;
+            // 
             // FrmCadVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.BurlyWood;
-            this.ClientSize = new System.Drawing.Size(779, 630);
+            this.ClientSize = new System.Drawing.Size(773, 628);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnCancelarItem);
             this.Controls.Add(this.btnGravarItem);
@@ -864,7 +872,6 @@
             this.MaximizeBox = false;
             this.Name = "FrmCadVendas";
             this.Text = "Cadastro de Vendas";
-            
             this.Load += new System.EventHandler(this.FrmCadVendas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pc_vendaBindingSource)).EndInit();
@@ -882,6 +889,7 @@
             this.groupBox2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fKpcvendapcitemvendaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -940,5 +948,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn quantidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn precounit;
         private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
+        private System.Windows.Forms.BindingSource fKpcvendapcitemvendaBindingSource;
     }
 }

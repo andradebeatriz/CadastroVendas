@@ -40,29 +40,31 @@
             // pgbSplash
             // 
             this.pgbSplash.ForeColor = System.Drawing.Color.Chocolate;
-            this.pgbSplash.Location = new System.Drawing.Point(72, 286);
+            this.pgbSplash.Location = new System.Drawing.Point(100, 352);
+            this.pgbSplash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pgbSplash.Name = "pgbSplash";
-            this.pgbSplash.Size = new System.Drawing.Size(475, 23);
+            this.pgbSplash.Size = new System.Drawing.Size(633, 28);
             this.pgbSplash.TabIndex = 0;
-            this.pgbSplash.Click += new System.EventHandler(this.pgbSplash_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label1.Location = new System.Drawing.Point(125, 226);
+            this.label1.Location = new System.Drawing.Point(215, 280);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 39);
+            this.label1.Size = new System.Drawing.Size(398, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "Controle de vendas";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WfaPrjVendas.Properties.Resources.vendas;
-            this.pictureBox1.Location = new System.Drawing.Point(225, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(306, 63);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 165);
+            this.pictureBox1.Size = new System.Drawing.Size(221, 203);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -74,10 +76,10 @@
             // 
             // FrmSplash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
-            this.ClientSize = new System.Drawing.Size(628, 358);
+            this.ClientSize = new System.Drawing.Size(837, 441);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pgbSplash);
@@ -85,6 +87,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(10, 0);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FrmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

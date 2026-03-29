@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.tssStatus = new System.Windows.Forms.StatusStrip();
             this.tssITexto = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.mnuMenu = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDeclientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +59,10 @@
             this.tsbCadProduto = new System.Windows.Forms.ToolStripButton();
             this.tsbAnimal = new System.Windows.Forms.ToolStripButton();
             this.tsbRelatorio = new System.Windows.Forms.ToolStripSplitButton();
+            this.relatórioDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatórioDeVendasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatórioDeProdutosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatórioDeAnimaisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbSair = new System.Windows.Forms.ToolStripButton();
             this.trmHora = new System.Windows.Forms.Timer(this.components);
             this.tssStatus.SuspendLayout();
@@ -72,11 +76,11 @@
             this.tssStatus.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tssStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tssITexto,
-            this.toolStripStatusLabel1});
-            this.tssStatus.Location = new System.Drawing.Point(0, 428);
+            this.tsslHora});
+            this.tssStatus.Location = new System.Drawing.Point(0, 424);
             this.tssStatus.Name = "tssStatus";
             this.tssStatus.Padding = new System.Windows.Forms.Padding(2, 0, 14, 0);
-            this.tssStatus.Size = new System.Drawing.Size(800, 22);
+            this.tssStatus.Size = new System.Drawing.Size(800, 26);
             this.tssStatus.TabIndex = 0;
             this.tssStatus.Text = "statusStrip1";
             // 
@@ -89,18 +93,19 @@
             this.tssITexto.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
             this.tssITexto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None;
             this.tssITexto.Name = "tssITexto";
-            this.tssITexto.Size = new System.Drawing.Size(584, 17);
+            this.tssITexto.Size = new System.Drawing.Size(250, 21);
             this.tssITexto.Spring = true;
             // 
-            // toolStripStatusLabel1
+            // tsslHora
             // 
-            this.toolStripStatusLabel1.AutoSize = false;
-            this.toolStripStatusLabel1.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            this.tsslHora.AutoSize = false;
+            this.tsslHora.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
-            this.toolStripStatusLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(200, 17);
+            this.tsslHora.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
+            this.tsslHora.Name = "tsslHora";
+            this.tsslHora.Size = new System.Drawing.Size(503, 21);
+            this.tsslHora.Click += new System.EventHandler(this.trmHora_Tick);
             // 
             // mnuMenu
             // 
@@ -192,6 +197,7 @@
             this.relatórioDeToolStripMenuItem.Name = "relatórioDeToolStripMenuItem";
             this.relatórioDeToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.relatórioDeToolStripMenuItem.Text = "Relatório de &clientes";
+            this.relatórioDeToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeToolStripMenuItem_Click);
             // 
             // relatórioDeVendasToolStripMenuItem
             // 
@@ -199,6 +205,7 @@
             this.relatórioDeVendasToolStripMenuItem.Name = "relatórioDeVendasToolStripMenuItem";
             this.relatórioDeVendasToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.relatórioDeVendasToolStripMenuItem.Text = "Relatório de &vendas";
+            this.relatórioDeVendasToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeVendasToolStripMenuItem_Click);
             // 
             // relatórioDeprodutosToolStripMenuItem
             // 
@@ -206,6 +213,7 @@
             this.relatórioDeprodutosToolStripMenuItem.Name = "relatórioDeprodutosToolStripMenuItem";
             this.relatórioDeprodutosToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.relatórioDeprodutosToolStripMenuItem.Text = "Relatório de &produtos";
+            this.relatórioDeprodutosToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeprodutosToolStripMenuItem_Click);
             // 
             // relatórioDeanimaisToolStripMenuItem
             // 
@@ -213,6 +221,7 @@
             this.relatórioDeanimaisToolStripMenuItem.Name = "relatórioDeanimaisToolStripMenuItem";
             this.relatórioDeanimaisToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.relatórioDeanimaisToolStripMenuItem.Text = "Relatório de &animais";
+            this.relatórioDeanimaisToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeanimaisToolStripMenuItem_Click);
             // 
             // janelasToolStripMenuItem
             // 
@@ -266,14 +275,17 @@
             // 
             // topicosToolStripMenuItem
             // 
+            this.topicosToolStripMenuItem.Image = global::WfaPrjVendas.Properties.Resources.ajuda;
             this.topicosToolStripMenuItem.Name = "topicosToolStripMenuItem";
-            this.topicosToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
+            this.topicosToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.topicosToolStripMenuItem.Text = "&Tópicos";
+            this.topicosToolStripMenuItem.Click += new System.EventHandler(this.topicosToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
+            this.sobreToolStripMenuItem.Image = global::WfaPrjVendas.Properties.Resources.animal;
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.sobreToolStripMenuItem.Text = "&Sobre o sistema";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
@@ -338,12 +350,53 @@
             // tsbRelatorio
             // 
             this.tsbRelatorio.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbRelatorio.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.relatórioDeClientesToolStripMenuItem,
+            this.relatórioDeVendasToolStripMenuItem1,
+            this.relatórioDeProdutosToolStripMenuItem1,
+            this.relatórioDeAnimaisToolStripMenuItem1});
             this.tsbRelatorio.Image = global::WfaPrjVendas.Properties.Resources.relatorio;
             this.tsbRelatorio.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbRelatorio.Name = "tsbRelatorio";
             this.tsbRelatorio.Size = new System.Drawing.Size(36, 24);
             this.tsbRelatorio.Text = "Cadastro de relatórios";
             this.tsbRelatorio.ButtonClick += new System.EventHandler(this.tsbRelatorio_ButtonClick);
+            // 
+            // relatórioDeClientesToolStripMenuItem
+            // 
+            this.relatórioDeClientesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.relatórioDeClientesToolStripMenuItem.Image = global::WfaPrjVendas.Properties.Resources.user;
+            this.relatórioDeClientesToolStripMenuItem.Name = "relatórioDeClientesToolStripMenuItem";
+            this.relatórioDeClientesToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
+            this.relatórioDeClientesToolStripMenuItem.Text = "Relatório de &Clientes";
+            this.relatórioDeClientesToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeClientesToolStripMenuItem_Click);
+            // 
+            // relatórioDeVendasToolStripMenuItem1
+            // 
+            this.relatórioDeVendasToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.relatórioDeVendasToolStripMenuItem1.Image = global::WfaPrjVendas.Properties.Resources.icons8_vendas_70;
+            this.relatórioDeVendasToolStripMenuItem1.Name = "relatórioDeVendasToolStripMenuItem1";
+            this.relatórioDeVendasToolStripMenuItem1.Size = new System.Drawing.Size(212, 24);
+            this.relatórioDeVendasToolStripMenuItem1.Text = "Relatório de &Vendas";
+            this.relatórioDeVendasToolStripMenuItem1.Click += new System.EventHandler(this.relatórioDeVendasToolStripMenuItem1_Click);
+            // 
+            // relatórioDeProdutosToolStripMenuItem1
+            // 
+            this.relatórioDeProdutosToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.relatórioDeProdutosToolStripMenuItem1.Image = global::WfaPrjVendas.Properties.Resources.adicionar_produto;
+            this.relatórioDeProdutosToolStripMenuItem1.Name = "relatórioDeProdutosToolStripMenuItem1";
+            this.relatórioDeProdutosToolStripMenuItem1.Size = new System.Drawing.Size(212, 24);
+            this.relatórioDeProdutosToolStripMenuItem1.Text = "Relatório de &Produtos";
+            this.relatórioDeProdutosToolStripMenuItem1.Click += new System.EventHandler(this.relatórioDeProdutosToolStripMenuItem1_Click);
+            // 
+            // relatórioDeAnimaisToolStripMenuItem1
+            // 
+            this.relatórioDeAnimaisToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.relatórioDeAnimaisToolStripMenuItem1.Image = global::WfaPrjVendas.Properties.Resources.animal;
+            this.relatórioDeAnimaisToolStripMenuItem1.Name = "relatórioDeAnimaisToolStripMenuItem1";
+            this.relatórioDeAnimaisToolStripMenuItem1.Size = new System.Drawing.Size(212, 24);
+            this.relatórioDeAnimaisToolStripMenuItem1.Text = "Relatório de &Animais";
+            this.relatórioDeAnimaisToolStripMenuItem1.Click += new System.EventHandler(this.relatórioDeAnimaisToolStripMenuItem1_Click);
             // 
             // tsbSair
             // 
@@ -422,6 +475,10 @@
         private System.Windows.Forms.ToolStripSplitButton tsbRelatorio;
         private System.Windows.Forms.ToolStripButton tsbSair;
         private System.Windows.Forms.Timer trmHora;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel tsslHora;
+        private System.Windows.Forms.ToolStripMenuItem relatórioDeClientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatórioDeVendasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem relatórioDeProdutosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem relatórioDeAnimaisToolStripMenuItem1;
     }
 }

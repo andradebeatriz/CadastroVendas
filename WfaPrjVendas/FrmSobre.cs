@@ -21,14 +21,5 @@ namespace WfaPrjVendas
         {
             Close();
         }
-
-        private void FrmSobre_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult resposta = MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (resposta == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-        }
     }
 }

@@ -74,10 +74,9 @@
             // 
             cod_proLabel.AutoSize = true;
             cod_proLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
-            cod_proLabel.Location = new System.Drawing.Point(67, 31);
-            cod_proLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            cod_proLabel.Location = new System.Drawing.Point(89, 38);
             cod_proLabel.Name = "cod_proLabel";
-            cod_proLabel.Size = new System.Drawing.Size(54, 17);
+            cod_proLabel.Size = new System.Drawing.Size(68, 21);
             cod_proLabel.TabIndex = 47;
             cod_proLabel.Text = "Código:";
             // 
@@ -85,10 +84,9 @@
             // 
             descricaoLabel.AutoSize = true;
             descricaoLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
-            descricaoLabel.Location = new System.Drawing.Point(54, 54);
-            descricaoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            descricaoLabel.Location = new System.Drawing.Point(72, 66);
             descricaoLabel.Name = "descricaoLabel";
-            descricaoLabel.Size = new System.Drawing.Size(68, 17);
+            descricaoLabel.Size = new System.Drawing.Size(85, 21);
             descricaoLabel.TabIndex = 49;
             descricaoLabel.Text = "Descrição:";
             // 
@@ -96,10 +94,9 @@
             // 
             quantidadeLabel.AutoSize = true;
             quantidadeLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
-            quantidadeLabel.Location = new System.Drawing.Point(42, 79);
-            quantidadeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            quantidadeLabel.Location = new System.Drawing.Point(56, 97);
             quantidadeLabel.Name = "quantidadeLabel";
-            quantidadeLabel.Size = new System.Drawing.Size(82, 17);
+            quantidadeLabel.Size = new System.Drawing.Size(99, 21);
             quantidadeLabel.TabIndex = 51;
             quantidadeLabel.Text = "Quantidade:";
             // 
@@ -107,10 +104,9 @@
             // 
             precounitLabel.AutoSize = true;
             precounitLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
-            precounitLabel.Location = new System.Drawing.Point(49, 103);
-            precounitLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            precounitLabel.Location = new System.Drawing.Point(65, 127);
             precounitLabel.Name = "precounitLabel";
-            precounitLabel.Size = new System.Drawing.Size(74, 17);
+            precounitLabel.Size = new System.Drawing.Size(90, 21);
             precounitLabel.TabIndex = 53;
             precounitLabel.Text = "Preço Unit:";
             // 
@@ -122,10 +118,11 @@
             this.btnSair.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnSair.Image = global::WfaPrjVendas.Properties.Resources.sair;
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Location = new System.Drawing.Point(711, 16);
+            this.btnSair.Location = new System.Drawing.Point(948, 20);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnSair.Size = new System.Drawing.Size(71, 27);
+            this.btnSair.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnSair.Size = new System.Drawing.Size(95, 33);
             this.btnSair.TabIndex = 46;
             this.btnSair.Text = "&Sair";
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -139,10 +136,11 @@
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnListar.Image = global::WfaPrjVendas.Properties.Resources.lista_de_mesas;
             this.btnListar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListar.Location = new System.Drawing.Point(449, 16);
+            this.btnListar.Location = new System.Drawing.Point(599, 20);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnListar.Size = new System.Drawing.Size(74, 27);
+            this.btnListar.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnListar.Size = new System.Drawing.Size(99, 33);
             this.btnListar.TabIndex = 45;
             this.btnListar.Text = "&Listar";
             this.btnListar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -156,10 +154,11 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnCancelar.Image = global::WfaPrjVendas.Properties.Resources.cross;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(355, 16);
+            this.btnCancelar.Location = new System.Drawing.Point(473, 20);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnCancelar.Size = new System.Drawing.Size(89, 27);
+            this.btnCancelar.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnCancelar.Size = new System.Drawing.Size(119, 33);
             this.btnCancelar.TabIndex = 44;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -174,10 +173,11 @@
             this.btnGravar.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnGravar.Image = global::WfaPrjVendas.Properties.Resources.download;
             this.btnGravar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGravar.Location = new System.Drawing.Point(266, 16);
+            this.btnGravar.Location = new System.Drawing.Point(355, 20);
+            this.btnGravar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGravar.Name = "btnGravar";
-            this.btnGravar.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnGravar.Size = new System.Drawing.Size(83, 27);
+            this.btnGravar.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnGravar.Size = new System.Drawing.Size(111, 33);
             this.btnGravar.TabIndex = 43;
             this.btnGravar.Text = "&Gravar";
             this.btnGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -191,10 +191,11 @@
             this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnApagar.Image = global::WfaPrjVendas.Properties.Resources.trash;
             this.btnApagar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnApagar.Location = new System.Drawing.Point(179, 15);
+            this.btnApagar.Location = new System.Drawing.Point(239, 18);
+            this.btnApagar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnApagar.Name = "btnApagar";
-            this.btnApagar.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnApagar.Size = new System.Drawing.Size(81, 27);
+            this.btnApagar.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnApagar.Size = new System.Drawing.Size(108, 33);
             this.btnApagar.TabIndex = 41;
             this.btnApagar.Text = "&Apagar";
             this.btnApagar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -208,10 +209,11 @@
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnEditar.Image = global::WfaPrjVendas.Properties.Resources.pencil;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(95, 16);
+            this.btnEditar.Location = new System.Drawing.Point(127, 20);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnEditar.Size = new System.Drawing.Size(79, 27);
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnEditar.Size = new System.Drawing.Size(105, 33);
             this.btnEditar.TabIndex = 40;
             this.btnEditar.Text = "&Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -225,10 +227,11 @@
             this.btnIncluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnIncluir.Image = global::WfaPrjVendas.Properties.Resources.plus;
             this.btnIncluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIncluir.Location = new System.Drawing.Point(9, 16);
+            this.btnIncluir.Location = new System.Drawing.Point(12, 20);
+            this.btnIncluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIncluir.Name = "btnIncluir";
-            this.btnIncluir.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnIncluir.Size = new System.Drawing.Size(81, 27);
+            this.btnIncluir.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnIncluir.Size = new System.Drawing.Size(108, 33);
             this.btnIncluir.TabIndex = 39;
             this.btnIncluir.Text = "&Incluir";
             this.btnIncluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -248,14 +251,14 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.dgvProduto.DataSource = this.pc_produtoBindingSource;
-            this.dgvProduto.Location = new System.Drawing.Point(9, 200);
-            this.dgvProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProduto.Location = new System.Drawing.Point(12, 246);
+            this.dgvProduto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvProduto.Name = "dgvProduto";
             this.dgvProduto.ReadOnly = true;
             this.dgvProduto.RowHeadersWidth = 62;
             this.dgvProduto.RowTemplate.Height = 28;
             this.dgvProduto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProduto.Size = new System.Drawing.Size(729, 143);
+            this.dgvProduto.Size = new System.Drawing.Size(972, 176);
             this.dgvProduto.TabIndex = 47;
             this.dgvProduto.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvProduto_CellFormatting);
             this.dgvProduto.SelectionChanged += new System.EventHandler(this.dgvProduto_SelectionChanged);
@@ -311,39 +314,41 @@
             this.txtCod_pro.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pc_produtoBindingSource, "cod_pro", true));
             this.txtCod_pro.Enabled = false;
             this.txtCod_pro.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
-            this.txtCod_pro.Location = new System.Drawing.Point(135, 29);
-            this.txtCod_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCod_pro.Location = new System.Drawing.Point(180, 36);
+            this.txtCod_pro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCod_pro.Name = "txtCod_pro";
             this.txtCod_pro.ReadOnly = true;
-            this.txtCod_pro.Size = new System.Drawing.Size(68, 24);
+            this.txtCod_pro.Size = new System.Drawing.Size(89, 29);
             this.txtCod_pro.TabIndex = 48;
             // 
             // txtDescricao
             // 
             this.txtDescricao.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pc_produtoBindingSource, "descricao", true));
             this.txtDescricao.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
-            this.txtDescricao.Location = new System.Drawing.Point(135, 52);
-            this.txtDescricao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescricao.Location = new System.Drawing.Point(180, 64);
+            this.txtDescricao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(187, 24);
+            this.txtDescricao.Size = new System.Drawing.Size(248, 29);
             this.txtDescricao.TabIndex = 50;
             // 
             // NudQuantidade
             // 
             this.NudQuantidade.Enabled = false;
             this.NudQuantidade.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
-            this.NudQuantidade.Location = new System.Drawing.Point(135, 78);
+            this.NudQuantidade.Location = new System.Drawing.Point(180, 96);
+            this.NudQuantidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NudQuantidade.Name = "NudQuantidade";
-            this.NudQuantidade.Size = new System.Drawing.Size(69, 24);
+            this.NudQuantidade.Size = new System.Drawing.Size(92, 29);
             this.NudQuantidade.TabIndex = 90;
             // 
             // txtPrecoUnit
             // 
             this.txtPrecoUnit.Enabled = false;
             this.txtPrecoUnit.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
-            this.txtPrecoUnit.Location = new System.Drawing.Point(135, 101);
+            this.txtPrecoUnit.Location = new System.Drawing.Point(180, 124);
+            this.txtPrecoUnit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrecoUnit.Name = "txtPrecoUnit";
-            this.txtPrecoUnit.Size = new System.Drawing.Size(93, 24);
+            this.txtPrecoUnit.Size = new System.Drawing.Size(123, 29);
             this.txtPrecoUnit.TabIndex = 91;
             this.txtPrecoUnit.Text = "R$ 00,00";
             // 
@@ -351,17 +356,19 @@
             // 
             this.panel1.Controls.Add(this.txtPesquisar);
             this.panel1.Controls.Add(this.btnPesquisar);
-            this.panel1.Location = new System.Drawing.Point(530, 16);
+            this.panel1.Location = new System.Drawing.Point(707, 20);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(169, 27);
+            this.panel1.Size = new System.Drawing.Size(225, 33);
             this.panel1.TabIndex = 92;
             // 
             // txtPesquisar
             // 
             this.txtPesquisar.BackColor = System.Drawing.Color.Linen;
-            this.txtPesquisar.Location = new System.Drawing.Point(3, 5);
+            this.txtPesquisar.Location = new System.Drawing.Point(4, 6);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(119, 20);
+            this.txtPesquisar.Size = new System.Drawing.Size(157, 22);
             this.txtPesquisar.TabIndex = 43;
             // 
             // btnPesquisar
@@ -370,10 +377,10 @@
             this.btnPesquisar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnPesquisar.Image = global::WfaPrjVendas.Properties.Resources.search;
-            this.btnPesquisar.Location = new System.Drawing.Point(128, 4);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPesquisar.Location = new System.Drawing.Point(171, 5);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(37, 20);
+            this.btnPesquisar.Size = new System.Drawing.Size(49, 25);
             this.btnPesquisar.TabIndex = 36;
             this.btnPesquisar.Text = "&";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -381,7 +388,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Linen;
+            this.groupBox1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.groupBox1.Controls.Add(this.txtPrecoUnit);
             this.groupBox1.Controls.Add(this.NudQuantidade);
             this.groupBox1.Controls.Add(cod_proLabel);
@@ -391,11 +398,11 @@
             this.groupBox1.Controls.Add(quantidadeLabel);
             this.groupBox1.Controls.Add(precounitLabel);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(12, 54);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(16, 66);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(365, 134);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(487, 165);
             this.groupBox1.TabIndex = 93;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro de produto";
@@ -416,10 +423,10 @@
             // 
             // FrmCadProduto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BurlyWood;
-            this.ClientSize = new System.Drawing.Size(787, 353);
+            this.ClientSize = new System.Drawing.Size(1049, 434);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvProduto);
@@ -433,7 +440,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FrmCadProduto";
             this.Text = "FrmCadProduto";

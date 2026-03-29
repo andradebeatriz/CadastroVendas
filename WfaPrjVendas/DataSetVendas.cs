@@ -9,6 +9,10 @@
 
 namespace WfaPrjVendas.DataSetVendasTableAdapters
 {
+    partial class rpt_vendasTableAdapter
+    {
+    }
+
     partial class animalTableAdapter
     {
     }
